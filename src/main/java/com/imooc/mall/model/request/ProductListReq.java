@@ -13,6 +13,17 @@ public class ProductListReq {
 
     private Integer pageSize=10;
 
+    @Override
+    public String toString() {
+        return "ProductListReq{" +
+                "keyword='" + keyword + '\'' +
+                ", categoryId=" + categoryId +
+                ", orderBy='" + orderBy + '\'' +
+                ", pageNum=" + pageNum +
+                ", pageSize=" + pageSize +
+                '}';
+    }
+
     public String getKeyword() {
         return keyword;
     }

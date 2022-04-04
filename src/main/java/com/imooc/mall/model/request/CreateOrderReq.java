@@ -18,6 +18,17 @@ public class CreateOrderReq {
 
     private Integer paymentType =1;
 
+    @Override
+    public String toString() {
+        return "CreateOrderReq{" +
+                "receiverName='" + receiverName + '\'' +
+                ", receiverMobile='" + receiverMobile + '\'' +
+                ", receiverAddress='" + receiverAddress + '\'' +
+                ", postage=" + postage +
+                ", paymentType=" + paymentType +
+                '}';
+    }
+
     public String getReceiverName() {
         return receiverName;
     }

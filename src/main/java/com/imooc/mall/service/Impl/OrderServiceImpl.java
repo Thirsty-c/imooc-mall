@@ -260,12 +260,12 @@ public class OrderServiceImpl implements OrderService {
     public String qrcode(String orderNo){
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
-
-        try {
-            ip = InetAddress.getLocalHost().getHostAddress();
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
+        //获取局域网地址
+//        try {
+//            ip = InetAddress.getLocalHost().getHostAddress();
+//        } catch (UnknownHostException e) {
+//            e.printStackTrace();
+//        }
 
         String address = ip + ":" + request.getLocalPort();
         String payUrl = "http://" + address + "pay?orderNo=" + orderNo;

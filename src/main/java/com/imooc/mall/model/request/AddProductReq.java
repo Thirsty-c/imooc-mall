@@ -27,6 +27,18 @@ public class AddProductReq {
 
     private Integer status;
 
+    @Override
+    public String toString() {
+        return "AddProductReq{" +
+                "name='" + name + '\'' +
+                ", image='" + image + '\'' +
+                ", detail='" + detail + '\'' +
+                ", categoryId=" + categoryId +
+                ", price=" + price +
+                ", stock=" + stock +
+                ", status=" + status +
+                '}';
+    }
 
     public String getName() {
         return name;

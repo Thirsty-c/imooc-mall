@@ -22,6 +22,16 @@ public class AddCategoryReq {
     @NotNull(message = "orderNum不能为null")
     private Integer orderNum;
 
+    @Override
+    public String toString() {
+        return "AddCategoryReq{" +
+                "name='" + name + '\'' +
+                ", type=" + type +
+                ", parentId=" + parentId +
+                ", orderNum=" + orderNum +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
